@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <style type="text/css">
+
+            img.speaker {
+                max-width: 20%;
+                height: auto;
+                border: .25em solid #f1e249 !important;
+                border-radius: 100%;
+                position: absolute;
+                left: -10%;
+                top: -10%;
+            }
+            section.speaker {
+                text-align: left;
+                padding-left: 25% !important;
+            }
+
+            .speaker h4 {
+                color: #f1e249;
+            }
+
+            section.coupon p,
+            section.coupon h3 {
+                display: none;
+            }
+            .use-coupon section.coupon p,
+            .use-coupon section.coupon h3 {
+                display: block;
+            }
+
+        </style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="images/background.jpg">
+					<img src="images/jsconf_logo.png" style="border: none; background: transparent; box-shadow: none; width: 40%; margin-left: -5%;" />
+                    <h3>JSConf Budapest 2015</h3>
+				</section>
+
+                <section data-background="images/background.jpg">
+                    <h3>May 14-15</h3>
+                </section>
+
+
+                <section data-background="images/urania.jpg" style="text-align: right;" >
+                    <h3 style="background: #000; display: inline-block; padding: 1%;">Venue</h3>
+                    <br />
+                    <h4 style="background: #000; display: inline-block; padding: 1%;">Uránia Nemzeti Filmszínház</h4>
+                    <br />
+                    <p style="background: #000; display: inline-block; padding: 1%;">1088 Budapest, Rákóczi út. 21</p>
+                    <br />
+                </section>
+
+
+                <section>
+                    <section data-background="images/background.jpg" data-slide-transition="none">
+                        <h3>16 Speakers</h3>
+                    </section>
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                            <img src="http://jsconfbp.com/images/speaker-liv.png" class="speaker">
+
+                            <h3>Liv Erickson</h3>
+                            <p>
+                                @misslivirose
+                                <br />
+                                Microsoft
+                            </p>
+                            <h4>
+                                JavaScript for Virtual Reality
+                            </h4>
+                            <p>
+                                #webVR #webGL #oculusRift
+                            </p>
+
+                    </section>
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-philnash.jpg" class="speaker">
+
+                        <h3>Phil Nash</h3>
+                        <p>
+                            @philnash
+                            <br />
+                            Twilio
+                        </p>
+                        <h4>
+                            The web is getting pushy
+                        </h4>
+                        <p>
+                            #ServiceWorkers #PushNotifications #MobileWeb
+                        </p>
+
+                    </section>
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-stephan.jpeg" class="speaker">
+
+                        <h3>
+                            Stephan Bönnemann
+                        </h3>
+                        <p>
+                            @boennemann
+
+                        </p>
+                        <h4>
+                            We fail to follow SemVer – and why it needn’t matter
+                        </h4>
+                        <p>
+                            #SemanticVersioning #npm #modules #automate
+                        </p>
+
+                    </section>
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-juliancheal.jpg" class="speaker">
+
+                        <h3>
+                            Julian Cheal
+                        </h3>
+                        <p>
+                            @juliancheal
+                        </p>
+                        <h4>
+                            Dancing with Robots
+                        </h4>
+                        <p>
+                            #iot #drones #LeapMotion #Pebble #Tessel #Dance
+                        </p>
+                    </section>
+
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-martin-kleppe.jpg" class="speaker">
+
+                        <h3>
+                            Martin Kleppe
+                        </h3>
+                        <p>
+                            @aemkei
+                            <br />
+                            Ubilabs
+                        </p>
+                        <h4>
+                            Invisible Code
+                        </h4>
+                        <p>
+                            #crazyHack #obfuscate #jsfuck
+                        </p>
+                    </section>
+
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-andre.jpeg" class="speaker">
+
+                        <h3>
+                            André Staltz
+                        </h3>
+                        <p>
+                            @andrestaltz
+                            <br />
+                            Futurice
+                        </p>
+                        <h4>
+                            What if the user was a function?
+                        </h4>
+                        <p>
+                            #reactive #functional
+                        </p>
+                    </section>
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-thespite.png" class="speaker">
+
+                        <h3>
+                            Jaume Sanchez Elias
+                        </h3>
+                        <p>
+                            @thespite
+                            <br />
+                            B-Reel
+                        </p>
+                        <h4>
+                            Getting started with three.js and WebGL
+                        </h4>
+                        <p>
+                            #webGL #threejs #3d
+                        </p>
+                    </section>
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-brevik.png" class="speaker">
+
+                        <h3>
+                            Mikael Brevik
+                        </h3>
+                        <p>
+                            @mikaelbrevik
+                            <br />
+                            Bekk Consulting
+                        </p>
+                        <h4>
+                            Functional UIs and Unidirectional Dataflow
+                        </h4>
+                        <p>
+                            #reactJS #immutableJS #OmniscientJS
+                        </p>
+                    </section>
+
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-sebastiano.jpeg" class="speaker">
+
+                        <h3>
+                            Sebastiano Armeli
+                        </h3>
+                        <p>
+                            @sebarmeli
+                            <br />
+                            Spotify
+                        </p>
+                        <h4>
+                            Enforcing coding standards in a JS library
+                        </h4>
+                        <p>
+                            #codingStandards #tools #team
+                        </p>
+                    </section>
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-supersole.png" class="speaker">
+
+                        <h3>
+                            Soledad Penadés
+                        </h3>
+                        <p>
+                            @supersole
+                            <br />
+                            Mozilla
+                        </p>
+                        <h4>
+                            The disconnected ensemble: scattered clouds, underground.
+                        </h4>
+                        <p>
+                            #webAudio #devices #mobile #music
+                        </p>
+                    </section>
+
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-substack.jpeg" class="speaker">
+
+                        <h3>
+                            James Halliday
+                        </h3>
+                        <p>
+                            @substack
+                            <br />
+                            Browserify
+                        </p>
+                        <h4>
+                            Anyone can edit
+                        </h4>
+                        <p>
+                            #openData #collaboration #wikis
+                        </p>
+                    </section>
+
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-sufian.jpeg" class="speaker">
+
+                        <h3>
+                            Sufian Rhazi
+                        </h3>
+                        <p>
+                            @sufianrhazi
+                            <br />
+                            Etsy
+                        </p>
+                        <h4>
+                            Transform your codebase without breaking a sweat
+                        </h4>
+                        <p>
+                            #SCSS #AMD #CommonJS #modules #codebase #maintenance
+                        </p>
+                    </section>
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-fedor.png" class="speaker">
+
+                        <h3>
+                            Fedor Indutny
+                        </h3>
+                        <p>
+                            @indutny
+                            <br />
+                            io.js
+                        </p>
+                        <h4>
+                            Diving into io.js C++ internals
+                        </h4>
+                        <p>
+                            #io.js #node #v8
+                        </p>
+                    </section>
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-pascal.jpeg" class="speaker">
+
+                        <h3>
+                            Pascal Precht
+                        </h3>
+                        <p>
+                            @pascalprecht
+                            <br />
+                            Thoughtram
+                        </p>
+                        <h4>
+                            Dependency Injection for Future Generations
+                        </h4>
+                        <p>
+                            #angular2 #typescript
+                        </p>
+                    </section>
+
+
+                    <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                        <img src="http://jsconfbp.com/images/speaker-anika.jpg" class="speaker">
+
+                        <h3>
+                            Anika Lindtner
+                        </h3>
+                        <p>
+                            @langziehohr
+                            <br />
+                            Travis CI
+                        </p>
+                        <h4>
+                            How you can fix your community in one day
+                        </h4>
+                        <p>
+                            #openSource #community #culture
+                        </p>
+                    </section>
+
+                </section>
+
+
+                <section data-background="images/background.jpg" data-slide-transition="none" class="speaker">
+
+                    <img src="http://jsconfbp.com/images/speaker-karolina.jpg" class="speaker">
+
+                    <h3>
+                        Karolina Szczur
+                    </h3>
+                    <p>
+                        @fox
+                        <br />
+                        &yet
+                    </p>
+
+                    <p>
+                        Master of Ceremony
+                    </p>
+                </section>
+
+
+
+                <section data-background="http://www.funzine.hu/wp-content/uploads/2014/06/Corvintet%C5%91.jpg" data-slide-transition="none">
+
+                    <h2>Party</h2>
+
+                </section>
+
+                <section data-background="images/background.jpg" data-slide-transition="none" class="coupon">
+
+                    <h1> €266 </h1>
+
+                    <p>Use this coupon code to save €50</p>
+                    <h3 id="Coupon">COUPON</h3>
+
+                </section>
+
+
+                <section data-background="images/background.jpg" data-slide-transition="none">
+
+                    <img src="images/jsconf_logo.png" style="border: none; background: transparent; box-shadow: none; width: 30%; margin-left: -5%;" />
+                    <p>
+                        jsconfbp.com
+                    </p>
+                    <p>
+                        @jsconfbp
+                    </p>
+                </section>
+
+			</div>
+
+		</div>
+
+        <script type="application/javascript">
+            var coupon = false;
+            if (location.search.indexOf('coupon=') > -1) {
+                coupon = location.search.match(/coupon=(\w*)/)
+                coupon = coupon && coupon[1] ? coupon[1] : false;
+            }
+
+            if (coupon) {
+                document.getElementsByTagName('body')[0].className += 'use-coupon';
+                document.getElementById('Coupon').innerHTML = coupon;
+            }
+
+        </script>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+                backgroundTransition: 'slide',
+
+
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
